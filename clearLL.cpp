@@ -40,13 +40,14 @@ void removeList()
     {
         //printf("%d \n", temp -> data);
         //creating another temp bc if we use the same one then it will start freeing at the end of the ll since we iterated through it
+        //this is to print
         struct Node* temp2 = temp;
         while(temp2 != NULL)
         {
             printf("%d", temp2 -> data);
             temp2 = temp2 -> next;
         }
-
+        //this is to deallocate
         printf("\n");
         free(temp);
         temp = temp -> next;
