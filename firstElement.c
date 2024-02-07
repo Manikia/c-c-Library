@@ -26,6 +26,7 @@ void returnFirstElement()
     //print the first element
     printf("\nThe first element is: %d ", temp -> data);
 }
+
 void print()
 {
     struct Node* temp = head;
