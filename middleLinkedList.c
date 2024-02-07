@@ -1,4 +1,3 @@
-//returns true if this list contains the specified element.
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
