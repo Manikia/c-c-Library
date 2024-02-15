@@ -1,9 +1,10 @@
-//Retrieves, but does not remove, the tail (last element) of this list.
+//removes and returns the last element from this list
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 
-struct Node {
+
+struct Node{
     int data;
     struct Node* next;
 };
@@ -19,7 +20,8 @@ void list(int x)
     head = temp; //setting new head
 }
 
-void returnLastElement()
+
+void removeLastElement()
 {
     struct Node* temp = head;
 
@@ -27,10 +29,7 @@ void returnLastElement()
     {
         temp = temp -> next;
     }
-
-    
-    //print the first element
-    printf("\nThe last element is: %d ", temp -> data);
+    printf("\n%d", temp -> data);
 }
 
 void print()
@@ -54,5 +53,5 @@ int main()
     list(4);
 
     print();
-    returnLastElement();
+    removeLastElement();
 }
